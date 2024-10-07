@@ -4,12 +4,12 @@ Welcome to my portfolio! This repository is a collection of all my work througho
 
 ## 📂 Directory Structure
 
-- **[programming-1](./programming-1/)**  
+- **[Programming I](./programming-1/)**  
   Contains all the exercises from **Programming I** subject.
 
-- **[programming-2](./programming-2/)**  
+- **[Programming II](./programming-2/)**  
   Includes exercises from **Programming II** subject.
 
-- **[projects](./projects/)**  
+- **[Projects](./projects/)**  
   A showcase of my **personal projects**.
 
