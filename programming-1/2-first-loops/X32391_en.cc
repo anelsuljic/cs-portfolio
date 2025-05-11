@@ -1,8 +1,13 @@
 //ALLOWANCE (2)
 
-//Write a program that counts how many weeks you end up with a strictly //positive balance.
-//The input consists of three naturals d ? 0, n ? 0 and t> 0. Following, //there are the quantities corresponding to the t weekly allowances a1, //..., at 
-//Output: The output is a natural number indicating the number of weeks //which end up with a strictly positive balance, after paying the weekly //expenses
+//Write a program that counts how many weeks you end up with a strictly 
+//positive balance.
+//The input consists of three naturalsï¿½dï¿½? 0,ï¿½nï¿½? 0 andï¿½t> 0. Following, 
+//there are the quantities corresponding to theï¿½tï¿½weekly allowancesï¿½a1, 
+//...,ï¿½atï¿½
+//Output: The output is a natural number indicating the number of weeks 
+//which end up with a strictly positive balance, after paying the weekly 
+//expenses
 
 #include <iostream>
 

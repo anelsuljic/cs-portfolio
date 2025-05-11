@@ -1,9 +1,11 @@
 //I-TH (3)
 
-//Write a program that, given an integer number i and a sequence of natural //numbers x1, …, xn, prints xi.
+//Write a program that, given an integer number i and a sequence of natural 
+//numbers x1, …, xn, prints xi.
 
 //Input begins with an integer number i, followed by the sequence x1, …, xn.
-//Output: If the position i is correct, print the content of i as it is shown //in the examples. Otherwise, print “Incorrect position.”.
+//Output: If the position i is correct, print the content of i as it is shown 
+//in the examples. Otherwise, print “Incorrect position.”.
 
 #include <iostream>
 
