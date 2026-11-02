@@ -1,0 +1,137 @@
+>>> from forth import interpret
+
+
+>>> interpret('1 2 3 .s ( Comentari: el .s mostra la pila ) ')
+[1, 2, 3]
+
+>>> interpret('1 2 3 .')
+3
+
+>>> interpret('1 . .')
+1
+Error: pila buida!
+
+
+
+
+
+>>> interpret('5 2 .s - .s .')
+[5, 2]
+[3]
+3
+
+>>> interpret('7 2 mod .')
+1
+
+
+
+
+
+>>> interpret('1 2 3 .s swap .s')
+[1, 2, 3]
+[1, 3, 2]
+
+>>> interpret('1 2 3 4 .s 2swap .s')
+[1, 2, 3, 4]
+[3, 4, 1, 2]
+
+>>> interpret('1 2 .s dup .s')
+[1, 2]
+[1, 2, 2]
+
+>>> interpret('1 2 3 .s 2dup .s')
+[1, 2, 3]
+[1, 2, 3, 2, 3]
+
+>>> interpret('1 2 .s over .s')
+[1, 2]
+[1, 2, 1]
+
+>>> interpret('1 2 3 4 .s 2over .s')
+[1, 2, 3, 4]
+[1, 2, 3, 4, 1, 2]
+
+>>> interpret('1 2 3 .s rot .s')
+[1, 2, 3]
+[2, 3, 1]
+
+>>> interpret('1 2 .s drop .s')
+[1, 2]
+[1]
+
+>>> interpret('1 2 3 .s 2drop .s')
+[1, 2, 3]
+[1]
+
+
+
+
+
+>>> interpret('2 3 <> -1 and .')
+-1
+
+
+
+
+
+>>> data = '\n'.join([
+... ': doble 2 * ;',
+... '3 doble .',
+... ': f doble 1 + ;',
+... '3 f .'
+... ])
+
+>>> interpret(data)
+6
+7
+
+
+
+
+
+>>> data = '\n'.join([
+... ': abs dup 0 < if 0 swap - endif ;',
+... '-2 abs .',
+... ])
+
+>>> interpret(data)
+2
+
+>>> data = '\n'.join([
+... ': min 2dup < if drop else swap drop endif ;',
+... '3 2 min .',
+... ])
+
+>>> interpret(data)
+2
+
+>>> data = '\n'.join([
+... ': signe dup 0 < if drop -1 else 0 > if 1 else 0 endif endif ;',
+... '-2 signe .s',
+... ])
+
+>>> interpret(data)
+[-1]
+
+>>> data = '\n'.join([
+... ': signe dup 0 < if drop -1 else 0 > if 1 else 0 endif endif ;',
+... '0 signe .s',
+... ])
+
+>>> interpret(data)
+[0]
+
+
+
+
+
+>>> data = '\n'.join([
+... ': faux dup rot * swap 1 - dup 2 < if drop else recurse endif ;',
+... ': factorial dup 2 < if drop 1 else dup 1 - faux endif ;',
+... '4 factorial .',
+... '0 factorial .',
+... ])
+
+>>> interpret(data)
+24
+1
