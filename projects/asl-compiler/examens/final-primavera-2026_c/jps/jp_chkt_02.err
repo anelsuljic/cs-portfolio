@@ -1,0 +1,12 @@
+Line 4:11 error: Operator '+' with incompatible types.
+Line 5:4 error: Assignment with incompatible types.
+Line 6:7 error: Array access with non integer index.
+Line 7:5 error: Break/continue out of a while.
+Line 9:5 error: Break/continue out of a while.
+Line 26:16 error: Operator '*' with incompatible types.
+Line 27:5 error: Operator 'not' with incompatible types.
+Line 28:5 error: Wrong number of levels in break/continue.
+Line 32:17 error: Operator '/' with incompatible types.
+Line 32:27 error: Array access with non integer index.
+Line 34:11 error: Wrong number of levels in break/continue.
+Line 41:2 error: Break/continue out of a while.

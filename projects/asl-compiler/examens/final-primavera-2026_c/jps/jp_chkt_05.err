@@ -1,0 +1,13 @@
+Line 2:19 error: Operator 'not' with incompatible types.
+Line 2:28 error: Operator '<<' with incompatible types.
+Line 2:31 error: Identifier 'b' is undeclared.
+Line 13:5 error: Assignment with incompatible types.
+Line 15:12 error: Assignment with incompatible types.
+Line 17:29 error: Operator '<<' with incompatible types.
+Line 19:18 error: Parameter #1 with incompatible types in call to 'ff'.
+Line 19:20 error: Parameter #2 with incompatible types in call to 'ff'.
+Line 19:30 error: Parameter #1 with incompatible types in call to 'ff'.
+Line 19:32 error: Parameter #2 with incompatible types in call to 'ff'.
+Line 20:15 error: Operator 'not' with incompatible types.
+Line 20:21 error: Operator '<<' with incompatible types.
+Line 22:9 error: Assignment with incompatible types.

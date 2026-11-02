@@ -1,0 +1,6 @@
+Line 3:11 error: Operator '+' with incompatible types.
+Line 4:4 error: Assignment with incompatible types.
+Line 5:7 error: Array access with non integer index.
+Line 23:16 error: Operator '*' with incompatible types.
+Line 26:17 error: Operator '*' with incompatible types.
+Line 26:31 error: Array access with non integer index.
